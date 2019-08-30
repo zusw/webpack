@@ -1,0 +1,36 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",  // 该插件转es6为es5
+      { // 打包项目代码时使用，配合@babel/polyfill，@babel/polyfill会污染全局环境
+        "targets": {
+          "edge": "17",
+          "firefox": "60",
+          "chrome": "67",
+          "safari": "11.1",
+        },
+        "useBuiltIns": "usage"
+      }
+    ], 
+    // [
+    "@babel/preset-react",
+  //     {
+  //       "pragma": "dom", // default pragma is React.createElement
+  //       "pragmaFrag": "DomFrag", // default is React.Fragment
+  //       "throwIfNamespace": false // defaults to true
+  //     }
+  //   ]
+  ],
+  "plugins": [
+    // [
+    //   "@babel/plugin-transform-runtime", // 打包库代码时使用
+    //   {
+    //     // "absoluteRuntime": false,
+    //     "corejs": 2,
+    //     "helpers": true,
+    //     "regenerator": true,
+    //     "useESModules": false
+    //   }
+    // ]
+  ]
+}

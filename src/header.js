@@ -1,8 +1,10 @@
 function Header() {
-  var dom = document.getElementById('root');
-  var header = document.createElement('div');
-  header.innerText = 'header';
-  dom.append(header)
+  const dom = document.getElementById('root');
+  const header = document.createElement('div');
+  header.classList.add('iconfont');
+  header.classList.add('icon-bianjixiugaiqianbishuxie');
+  // header.innerText = 'header';
+  dom.append(header);
 }
-
-export default Header;
+module.exports = Header;
+// export default Header;
